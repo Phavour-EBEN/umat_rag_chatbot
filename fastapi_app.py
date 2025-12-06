@@ -16,7 +16,8 @@ load_dotenv()
 app = FastAPI(
     title="UMat RAG Chatbot API",
     description="RAG-based chatbot for University of Mines and Technology website",
-    version="1.0.0"
+    version="1.0.0",
+    docs_url='/docs'
 )
 
 # Add CORS middleware to allow frontend access
@@ -164,7 +165,8 @@ async def root():
         "endpoints": {
             "POST /query": "Ask a question about UMat",
             "GET /health": "Check system health",
-            "GET /stats": "Get system statistics"
+            "GET /stats": "Get system statistics",
+            "docs": "/docs",
         }
     }
 
