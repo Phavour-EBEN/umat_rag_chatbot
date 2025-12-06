@@ -4,6 +4,9 @@ requests
 # Data Processing
 numpy
 
+# Embeddings (Local)
+sentence-transformers
+
 # API Framework
 fastapi
 uvicorn
